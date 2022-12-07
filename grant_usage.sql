@@ -14,3 +14,19 @@ grant select on future views in database fivetran_database to role pc_dbt_role;
 grant usage on all schemas in database fivetran_database to role pc_dbt_role;
 grant select on all tables in database fivetran_database to role pc_dbt_role;
 grant select on all views in database fivetran_database to role pc_dbt_role;
+
+use database LABS_DB;
+use schema NORTHWINDS_DATA;
+
+grant usage on database LABS_DB to role pc_dbt_role;
+grant create schema on database LABS_DB to role pc_dbt_role; 
+grant usage on schema LABS_DB.NORTHWINDS_DATA to role pc_dbt_role;
+grant create table on schema LABS_DB.NORTHWINDS_DATA to role pc_dbt_role;
+grant create view on schema LABS_DB.NORTHWINDS_DATA to role pc_dbt_role;
+grant usage on future schemas in database LABS_DB to role pc_dbt_role;
+grant select on future tables in database LABS_DB to role pc_dbt_role;
+grant select on future views in database LABS_DB to role pc_dbt_role;
+grant usage on all schemas in database LABS_DB to role pc_dbt_role;
+grant select on all tables in database LABS_DB to role pc_dbt_role;
+grant select on all views in database LABS_DB to role pc_dbt_role;
+
